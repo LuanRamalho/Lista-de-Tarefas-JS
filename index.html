@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <input type="text" id="newTask" placeholder="Digite uma nova tarefa">
+        <button onclick="addTask()">Adicionar Tarefa</button>
+        <button onclick="sortTasks()">Ordenar Tarefas</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <div class="edit-container" id="editContainer" style="display: none;">
+        <h2>Editar Tarefa</h2>
+        <input type="text" id="editTaskText">
+        <textarea id="editTaskNote" placeholder="Adicionar nota extra"></textarea>
+        <button onclick="saveTask()">Salvar</button>
+        <button onclick="cancelEdit()">Cancelar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
